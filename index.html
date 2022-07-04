@@ -29,7 +29,7 @@
         let input = el('input');
 
         input.addEventListener('input', (e) => {
-            el('div').textContent = input.value.split('').map(item => item.toLowerCase()).join('-')
+            el('div').textContent = input.value.split(' ').map(item => item.toLowerCase()).join('-')
         })
     </script>
 </body>
